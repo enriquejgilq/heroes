@@ -1,0 +1,25 @@
+<h1> Coincidencia con:  <small>{{termino}}</small></h1>
+<hr>
+
+
+
+<div class="row animated fadeIn fast" *ngIf="heroes.length==0">
+    <div class="col-md-12">
+        <div class="alert alert-info" role="alert">
+            no existen existen resultados con el termino : {{termino}}
+
+        </div>
+
+    </div>
+
+</div>
+<div class="card-columns">
+  <app-heroe-tarjeta [heroe]="allHeroes" [index]="allHeroes.idx" *ngFor="let allHeroes of heroes; "></app-heroe-tarjeta>
+
+      <!--Este metodo mediante el codigo de programacion!!! :D -->
+    <!--  <button (click)="verHeroe(i)" type="button" class="btn btn-outline-primary btn-block"> Ver Mas..
+      </button>-->
+
+
+
+</div>

@@ -1,0 +1,12 @@
+<h1> Heroes <small>Marvel y DC</small></h1>
+<hr>
+
+<div class="card-columns">
+
+
+  <!--*ngFor="let heroe of heroes; let i = index"-->
+
+
+  <!--                  [heroe] es la propiedad que estoy trayendo del heroe.tarjeta.component y  heroe es el que estoy trayendo del *ngfor            -->
+<app-heroe-tarjeta (heroeSeleccionado)="verHeroe($event)" [heroe]="heroe" [index]="i" *ngFor="let heroe of heroes; let i = index"></app-heroe-tarjeta>
+</div>
